@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use("tpope/vim-fugitive")
+
+  -- formating and linting
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('jayp0521/mason-null-ls.nvim')
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
