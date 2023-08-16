@@ -163,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/johnz.wu/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-python-pep8-indent"] = {
+    loaded = true,
+    path = "/Users/johnz.wu/.local/share/nvim/site/pack/packer/start/vim-python-pep8-indent",
+    url = "https://github.com/Vimjas/vim-python-pep8-indent"
   }
 }
 
