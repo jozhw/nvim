@@ -25,7 +25,12 @@ return require("packer").startup(function(use)
 	use("ThePrimeagen/harpoon")
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
-
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
+	})
 	-- formating and linting
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
