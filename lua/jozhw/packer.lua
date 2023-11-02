@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 	use("nvim-treesitter/playground")
 	use("ThePrimeagen/harpoon")
 	use("mbbill/undotree")
+	use("mfussenegger/nvim-dap") -- cpp debugger
 	use("tpope/vim-fugitive")
 	use({
 		"windwp/nvim-autopairs",

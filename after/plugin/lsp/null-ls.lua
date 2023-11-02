@@ -21,6 +21,7 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		null_ls.builtins.formatting.isort, -- python formatter
 		null_ls.builtins.formatting.black, -- python formatter
+		null_ls.builtins.formatting.clang_format, -- clang formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)
