@@ -12,7 +12,7 @@ Signficant amount of the configurations are taken from @theprimeagen and @josean
 treesitter/highlighter: Error executing lua: ...im/0.6.0/share/nvim/runtime/lua/vim/treesitter/query.lua:161:
 ```
 
-It could be that the language server is out of date. For typescript run while neovim is open.
+It could be that treesitter may be out of date. If so, run the following:
 
 ```
 :TSUpdate
