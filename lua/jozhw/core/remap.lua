@@ -1,14 +1,7 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 local keymap = vim.keymap -- for conciseness
-
----------------------
--- from josean-dev
----------------------
-
----------------------
--- General Keymaps
----------------------
 
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -36,10 +29,6 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
-----------------------
--- from the primeagen
-----------------------
-
 -- visual move lines
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -51,22 +40,21 @@ keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv") -- keeps cursor in the middle on search terms
 
 keymap.set("n", "<leader>vwm", function()
-  require("vim-with-me").StartVimWithMe()
+	require("vim-with-me").StartVimWithMe()
 end)
 keymap.set("n", "<leader>svwm", function()
-  require("vim-with-me").StopVimWithMe()
+	require("vim-with-me").StopVimWithMe()
 end)
 
--- void highlight 
-keymap.set("x", "<leader>p", "\"_dP")
+-- void highlight
+keymap.set("x", "<leader>p", '"_dP')
 
 -- next greatest remap ever : asbjornHaland
-keymap.set({"n", "v"}, "<leader>y", [["+y]])  -- with leader y copy becomes cross platform
+keymap.set({ "n", "v" }, "<leader>y", [["+y]]) -- with leader y copy becomes cross platform
 keymap.set("n", "<leader>Y", [["+Y]])
 
-keymap.set({"n", "v"}, "<leader>d", [["_d]]) -- delete to void
+keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- delete to void
 
--- This is going to get me cancelled
 keymap.set("i", "<C-c>", "<Esc>")
 
 keymap.set("n", "Q", "<nop>")
@@ -81,12 +69,12 @@ keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
-keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>")
+keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end)
 
--- terminal 
-keymap.set('t', '<Esc>', [[<C-\><C-n>]]) -- exit insert mode in terminal
+-- terminal
+keymap.set("t", "<Esc>", [[<C-\><C-n>]]) -- exit insert mode in terminal
