@@ -18,6 +18,8 @@ keymap.set("n", "<localleader>tr", "<cmd>read ~/.config/nvim/templates/Root.tex<
 
 keymap.set("n", "<localleader>tm", "<cmd>read ~/.config/nvim/templates/MultipleAnswer.tex<CR>")
 
+keymap.set("n", "<localleader>tje", "<cmd>read ~/.config/nvim/templates/JournalEntry.tex<CR>")
+
 local config = require("nvim-surround.config")
 
 require("nvim-surround").buffer_setup({

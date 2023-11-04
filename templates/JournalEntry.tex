@@ -1,0 +1,141 @@
+\documentclass[twoside,12pt,english]{article}
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\definecolor{marron}{RGB}{60,30,10}
+\definecolor{darkblue}{RGB}{0,0,80}
+\definecolor{lightblue}{RGB}{80,80,80}
+\definecolor{darkgreen}{RGB}{0,80,0}
+\definecolor{darkgray}{RGB}{0,80,0}
+\definecolor{darkred}{RGB}{80,0,0}
+\definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
+\usepackage[demo]{graphicx}
+\usepackage{wallpaper}
+\usepackage{wrapfig,booktabs}
+
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\input Acorn.fd
+\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
+
+
+\usepackage{geometry}
+\geometry{
+  top=5cm,
+  bottom=5cm,
+  left=2cm,
+  right=2cm,
+  headheight=1.5cm,
+  headsep=0.8cm,
+  footskip=0.5cm
+}
+
+\renewcommand{\familydefault}{pplj} 
+\usepackage[
+final,
+stretch=10,
+protrusion=true,
+tracking=true,
+spacing=on,
+kerning=on,
+expansion=true]{microtype}
+
+\setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
+
+
+\usepackage{fourier-orns}
+
+\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \\ \vspace{2em}}}
+\newcommand{\ornpar}{\noindent \textcolor{darkgray}{ \raisebox{-1.9pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone}}}
+\newcommand{\ornimpar}{\textcolor{darkgray}{\raisebox{-1.9pt}[10pt][10pt]{\decoone \floweroneright \decotwo \aldineleft \decothreeright \decofourright \leafleft} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafleft}}}
+
+\makeatletter
+\def\headrule{{\color{darkgray}\raisebox{-2.1pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{ \leafleft}}}
+\makeatother
+
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+\newcommand{\estcab}[1]{\itshape\textcolor{marron}{\nouppercase #1}}
+
+\fancyhead[LO,LE]{\estcab{\leftmark}}
+\fancyhead[RO,RE]{\estcab{[Date] | Journal No.[Number]}}
+
+\fancyfoot[LO]{
+\ornimpar \\ \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
+}
+\fancyfoot[RE]{\ornpar   \\ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\centering\Huge\bfseries\color{darkgreen}} % Formatting for section title
+  {} % Label
+  {0em} % Space between label and title
+  {}
+\titleformat{\subsection}
+  {\large\bfseries\color{darkgreen}} % Formatting for subsection title
+  {} % Label
+  {0em} % Space between label and title
+  {\thesubsection.\ }
+
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}  % Add this line to change subsection numbering
+
+\newenvironment{Section}[1]
+{\section{#1}}
+{\vspace{12pt}\centering ------- \decofourleft\decofourright ------- \par}
+
+\usepackage{lipsum}
+\setlength{\parindent}{1em}
+\pagestyle{fancy}
+
+\renewcommand{\footnoterule}{\vspace{-0.5em}\noindent\textcolor{marron}{\decosix \raisebox{2.9pt}{\line(1,0){100}} \lefthand} \vspace{.5em} }
+\usepackage[hang,splitrule]{footmisc}
+\addtolength{\footskip}{0.5cm}
+\setlength{\footnotemargin}{0.3cm}
+\setlength{\footnotesep}{0.4cm}
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+\begin{document}
+% \TileWallPaper{300pt}{300pt}{Descargas/fondopapelviejo.jpg}
+
+
+\section*{Plant\ae}
+\markboth{Plant\ae}{}
+\lettrine[lines=3]{\initfamily\textcolor{darkgreen}{T}}{he classic} kingdom \emph{Plant\ae} (Haeckel, 1866
+include all the multicellular green plants (\emph{Viridiplant\ae} in Latin) as flowering  
+plants, conifers, ferns, mosses and green algae. The number of species 
+are estimated\footnote{Largely underestimated according to many naturalist.} around 300,000 to 315,000. 
+Usually red or brown seaweeds like kelp, fungi and bacteria have
+excluded from this group.
+This kingdom really exists since Carolus Linn\ae us (1707--1778) who 
+divided the natural world into animals, plants and minerals. The kingdom \emph{Animalia}  and \emph{Plant\ae} remained 
+in use by modern evolutionary biologists until some years.  
+
+But now, both kingkoms are considered only two brachs of the unicelular kingdom \emph{Protist} 
+or \emph{Protozoa}\footnote{Although by tradition,  inconsistently the status of kingdom 
+is maintained \emph{Animalia}  and \emph{Plant\ae}.}.  
+\lipsum[2]
+
+\lipsum[3]
+
+
+\ornamento
+
+\subsection{Subsection Title 1}
+This is the content of subsection 1.
+
+\ornamento
+
+\subsection{Subsection Title 2}
+This is the content of subsection 2.
+
+\ornamento
+
+
+\end{document}
