@@ -20,10 +20,10 @@ vim.g["vimtex_syntax_enabled"] = 1
 -- https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt
 
 vim.g["vimtex_log_ignore"] = {
-	"Underfull",
-	"Overfull",
-	"specifier changed to",
-	"Token not allowed in a PDF string",
+    "Underfull",
+    "Overfull",
+    "specifier changed to",
+    "Token not allowed in a PDF string",
 }
 
 vim.g["vimtex_context_pdf_viewer"] = "skim"
