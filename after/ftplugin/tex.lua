@@ -2,23 +2,23 @@
 
 local keymap = vim.keymap -- for conciseness
 
-keymap.set("n", "<localleader>tp", "<cmd>read ~/.config/nvim/templates/PhilPaper.tex<CR>")
+keymap.set("n", "<localleader>tp", "<cmd>read ~/latex-templates/PhilPaper.tex<CR>")
 
-keymap.set("n", "<localleader>tl", "<cmd>read ~/.config/nvim/templates/Letter.tex<CR>")
+keymap.set("n", "<localleader>tl", "<cmd>read ~/latex-templates/Letter.tex<CR>")
 
-keymap.set("n", "<localleader>tg", "<cmd>read ~/.config/nvim/templates/Glossary.tex<CR>")
+keymap.set("n", "<localleader>tg", "<cmd>read ~/latex-templates/Glossary.tex<CR>")
 
-keymap.set("n", "<localleader>th", "<cmd>read ~/.config/nvim/templates/HandOut.tex<CR>")
+keymap.set("n", "<localleader>th", "<cmd>read ~/latex-templates/HandOut.tex<CR>")
 
-keymap.set("n", "<localleader>tb", "<cmd>read ~/.config/nvim/templates/PhilBeamer.tex<CR>")
+keymap.set("n", "<localleader>tb", "<cmd>read ~/latex-templates/PhilBeamer.tex<CR>")
 
-keymap.set("n", "<localleader>ts", "<cmd>read ~/.config/nvim/templates/SubFile.tex<CR>")
+keymap.set("n", "<localleader>ts", "<cmd>read ~/latex-templates/SubFile.tex<CR>")
 
-keymap.set("n", "<localleader>tr", "<cmd>read ~/.config/nvim/templates/Root.tex<CR>")
+keymap.set("n", "<localleader>tr", "<cmd>read ~/latex-templates/Root.tex<CR>")
 
-keymap.set("n", "<localleader>tm", "<cmd>read ~/.config/nvim/templates/MultipleAnswer.tex<CR>")
+keymap.set("n", "<localleader>tm", "<cmd>read ~/latex-templates/MultipleAnswer.tex<CR>")
 
-keymap.set("n", "<localleader>tje", "<cmd>read ~/.config/nvim/templates/JournalEntry.tex<CR>")
+keymap.set("n", "<localleader>tje", "<cmd>read ~/latex-templates/JournalEntry.tex<CR>")
 
 local config = require("nvim-surround.config")
 
