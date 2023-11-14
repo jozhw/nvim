@@ -1,3 +1,2 @@
-require("jozhw.packer")
-require("jozhw")
-
+require("jozhw.core")
+require("jozhw.lazy")
