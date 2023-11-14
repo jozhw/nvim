@@ -2,45 +2,11 @@
 
 local keymap = vim.keymap -- for conciseness
 
-keymap.set(
-    "n",
-    "<localleader>tp",
-    "<cmd>read ~/latex-templates/PhilPaper.tex<CR>"
-)
-
-keymap.set("n", "<localleader>tl", "<cmd>read ~/latex-templates/Letter.tex<CR>")
-
-keymap.set(
-    "n",
-    "<localleader>tg",
-    "<cmd>read ~/latex-templates/Glossary.tex<CR>"
-)
-
-keymap.set(
-    "n",
-    "<localleader>th",
-    "<cmd>read ~/latex-templates/HandOut.tex<CR>"
-)
-
-keymap.set(
-    "n",
-    "<localleader>tb",
-    "<cmd>read ~/latex-templates/PhilBeamer.tex<CR>"
-)
-
-keymap.set(
-    "n",
-    "<localleader>ts",
-    "<cmd>read ~/latex-templates/SubFile.tex<CR>"
-)
-
-keymap.set("n", "<localleader>tr", "<cmd>read ~/latex-templates/Root.tex<CR>")
-
-keymap.set(
-    "n",
-    "<localleader>tm",
-    "<cmd>read ~/latex-templates/MultipleAnswer.tex<CR>"
-)
+-- set keymaps to auto import a latex template
+-- follow the following convention to avoid keymap conflicts
+-- use <localleader>t<initals of the type of template lowercase>
+-- for the above t means template to make the key mapping intutitive
+-- in the case below je is the initials for JournalEntry.
 
 keymap.set(
     "n",
