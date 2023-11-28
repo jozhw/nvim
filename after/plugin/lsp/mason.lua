@@ -38,6 +38,4 @@ mason_tool_installer.setup({
         "clang-format",
         "codelldb",
     },
-    -- auto-install configured formatters & linters (with null-ls)
-    automatic_installation = true,
 })
