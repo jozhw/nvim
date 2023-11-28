@@ -14,6 +14,12 @@ keymap.set(
     "<cmd>read ~/latex-templates/JournalEntry.tex<CR>"
 )
 
+keymap.set(
+    "n",
+    "<localleader>tmn",
+    "<cmd>read ~/latex-templates/MessageNotes.tex<CR>"
+)
+
 local config = require("nvim-surround.config")
 
 require("nvim-surround").buffer_setup({
