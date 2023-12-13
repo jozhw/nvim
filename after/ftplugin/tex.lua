@@ -20,6 +20,11 @@ keymap.set(
     "<cmd>read ~/latex-templates/MessageNotes.tex<CR>"
 )
 
+keymap.set(
+    "n",
+    "<localleader>tba",
+    "<cmd>read ~/latex-templates/BookAnalysis.tex<CR>"
+)
 local config = require("nvim-surround.config")
 
 require("nvim-surround").buffer_setup({
