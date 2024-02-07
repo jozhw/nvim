@@ -8,6 +8,17 @@ Signficant amount of the configurations are taken:
 - @josean-dev
 - @benbrastmckie (vimtex)
 
+# Installing Neovim
+
+Please see the neovim documentation [here](https://github.com/neovim/neovim/blob/master/INSTALL.md).
+
+For macos users using brew, use:
+
+```
+brew install neovim
+
+```
+
 ## Dependencies
 
 ### vimtex (latex)
