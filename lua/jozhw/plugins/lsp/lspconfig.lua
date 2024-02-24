@@ -6,6 +6,10 @@ return {
         { "antosha417/nvim-lsp-file-operations", config = true },
     },
     config = function()
+        -- extend lspconfig for lsp-zero from lsp-zero docs
+        local lsp_zero = require("lsp-zero")
+        lsp_zero.extend_lspconfig()
+
         -- import lspconfig plugin
         local lspconfig = require("lspconfig")
 
