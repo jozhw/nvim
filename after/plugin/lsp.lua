@@ -2,29 +2,28 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-    "tsserver",
-    "rust_analyzer",
-    "clangd",
+-- from v2.x -> v3.x must use mason-lspconfig to install servers
+require("mason").setup({})
+require("mason-lspconfig").setup({
+    ensure_installed = { "tsserver", "rust_analyzer", "clangd" },
+    handlers = {
+        lsp.default_setup,
+    },
 })
 
--- Fix Undefined global 'vim'
-lsp.nvim_workspace()
-
+-- from v2.x -> v3.x .setup_nvim_cmp() is deprecated
 local cmp = require("cmp")
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-    ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
-    ["<C-Space>"] = cmp.mapping.complete(),
-})
 
-cmp_mappings["<Tab>"] = nil
-cmp_mappings["<S-Tab>"] = nil
-
-lsp.setup_nvim_cmp({
-    mapping = cmp_mappings,
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+        -- scroll up and down the documentation window
+        ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-d>"] = cmp.mapping.scroll_docs(4),
+        ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-Space>"] = cmp.mapping.complete(),
+    }),
 })
 
 lsp.set_preferences({
