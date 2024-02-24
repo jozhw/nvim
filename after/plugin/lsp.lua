@@ -13,6 +13,7 @@ require("mason-lspconfig").setup({
 
 -- from v2.x -> v3.x .setup_nvim_cmp() is deprecated
 local cmp = require("cmp")
+local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
