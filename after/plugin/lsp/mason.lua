@@ -8,7 +8,14 @@ local mason_lspconfig = require("mason-lspconfig")
 local mason_tool_installer = require("mason-tool-installer")
 
 -- enable mason
-mason.setup()
+mason.setup({
+    ensure_isntalled = {
+        "tailwindcss-language-server",
+        "eslint-lsp",
+    },
+    automatic_installation = true,
+}
+)
 
 mason_lspconfig.setup({
     -- list of servers for mason to install
