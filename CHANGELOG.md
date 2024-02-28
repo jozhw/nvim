@@ -26,7 +26,7 @@ changes for each pull request instead of having to go through git history.
 
 Initial release
 
-[1.1.0]: https://github.com/jozhw/nvim/compare/v1.1.0...v1.1.1
+[1.1.1]: https://github.com/jozhw/nvim/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/jozhw/nvim/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/jozhw/nvim/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jozhw/nvim/releases/tag/v1.0.0
