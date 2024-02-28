@@ -14,8 +14,7 @@ mason.setup({
         "eslint-lsp",
     },
     automatic_installation = true,
-}
-)
+})
 
 mason_lspconfig.setup({
     -- list of servers for mason to install
