@@ -7,6 +7,12 @@ This means that all previous pull requests had no versioning control, so
 I decided to start from v1.0.0. This is mainly to keep a summary all of the major
 changes for each pull request instead of having to go through git history.
 
+## [1.2.0] - 2024-03-15
+
+- Fix error with nvim-lint pylint failing to identify conda env module.
+  - Change python linting from pyright to python-lsp-server.
+  - Remove nvim-lint.
+
 ## [1.1.1] - 2024-02-28
 
 - Fix eslint_d cannot find .eslintrc file when .eslintrc file is not needed.
@@ -26,6 +32,7 @@ changes for each pull request instead of having to go through git history.
 
 Initial release
 
+[1.2.0]: https://github.com/jozhw/nvim/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/jozhw/nvim/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/jozhw/nvim/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/jozhw/nvim/compare/v1.0.0...v1.0.1
