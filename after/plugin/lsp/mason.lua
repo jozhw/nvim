@@ -12,6 +12,7 @@ mason.setup({
     ensure_isntalled = {
         "tailwindcss-language-server",
         "eslint-lsp",
+        "python-lsp-server",
     },
     automatic_installation = true,
 })

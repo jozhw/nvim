@@ -5,7 +5,12 @@ lsp.preset("recommended")
 -- from v2.x -> v3.x must use mason-lspconfig to install servers
 require("mason").setup({})
 require("mason-lspconfig").setup({
-    ensure_installed = { "tsserver", "rust_analyzer", "clangd", "eslint" },
+    ensure_installed = {
+        "tsserver",
+        "rust_analyzer",
+        "clangd",
+        "eslint",
+    },
     handlers = {
         lsp.default_setup,
     },
